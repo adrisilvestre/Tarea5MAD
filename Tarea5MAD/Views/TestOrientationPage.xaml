@@ -7,10 +7,12 @@
              x:Class="Tarea5MAD.Views.TestOrientationPage">
     <ContentPage.Content>
         <StackLayout>
+            
             <Button Text="GetOrientation" Command="{Binding OrientationCommand}"/>
             <Label Text="{Binding StringOrientation, Mode=TwoWay}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Go to Renderers practice" Command="{Binding RenderersCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

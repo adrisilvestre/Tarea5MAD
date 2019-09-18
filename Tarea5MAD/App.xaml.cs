@@ -11,7 +11,7 @@ namespace Tarea5MAD
         {
             InitializeComponent();
 
-            MainPage = new TestOrientationPage();
+            MainPage = new NavigationPage( new TestOrientationPage());
         }
 
         protected override void OnStart()

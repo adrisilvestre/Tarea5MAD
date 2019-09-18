@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using System.Windows.Input;
 using System.ComponentModel;
+using Tarea5MAD.Views;
 
 namespace Tarea5MAD.ViewModels
 {
@@ -14,6 +15,7 @@ namespace Tarea5MAD.ViewModels
         public string StringOrientation { get; set; }
         
         public ICommand OrientationCommand { get; set; }
+        public ICommand RenderersCommand { get; set; }
         public TestOrientationPageViewModel()
         {
             OrientationCommand= new Command(async () =>
@@ -22,19 +24,26 @@ namespace Tarea5MAD.ViewModels
 
                 if (orientation == DeviceOrientation.Landscape)
                 {
-                    StringOrientation = "El dispositivo está en modo landscape";
+                    StringOrientation = "El dispositivo está en modo Landscape";
                    
                 }
                 if (orientation == DeviceOrientation.Portrait)
                 {
-                    StringOrientation = "El dispositivo está en modo portrait";
+                    StringOrientation = "El dispositivo está en modo Portrait";
                     
                 }
             });
 
+            RenderersCommand = new Command(async () =>
+            {
                 
-            
+                await App.Current.MainPage.Navigation.PushModalAsync(new TestRenderersPage());
+                await App.Current.MainPage.Navigation.PopToRootAsync();
+            });
+
+
         }
+      
         public event PropertyChangedEventHandler PropertyChanged;
 
 
