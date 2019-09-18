@@ -1,8 +1,8 @@
 # Tarea5MAD
  Fifth assignment for Mobile Apps Development
  
-![](images/P1.jpeg)\
-![](images/P2.jpeg)\
-![](images/P3.jpeg)\
-![](images/P4.jpeg)\
+![](Images/P1.jpeg)\
+![](Images/P2.jpeg)\
+![](Images/P3.jpeg)\
+![](Images/P4.jpeg)\
 
