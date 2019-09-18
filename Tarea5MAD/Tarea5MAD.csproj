@@ -17,10 +17,12 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Effects\" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\TestFocusEffectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\TestOrientationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

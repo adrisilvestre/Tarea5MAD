@@ -15,6 +15,8 @@
 
             <Entry Placeholder="Without Renderes" VerticalOptions="CenterAndExpand"
                                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Go to TestFocusEffectPage" Command="{Binding FEffectCommand}"/>
         </StackLayout>
         
 
